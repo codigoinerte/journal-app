@@ -23,7 +23,8 @@ export const AppRouter = () => {
            : <Route path="/journal-app/auth/*" element={ <AuthRoutes /> } />
         }
 
-        <Route path='/*' element={ <Navigate to='/journal-app/auth/login' />  } />
+        <Route path='/journal-app/*' element={ <Navigate to='/journal-app/auth/login' />  } />
+        <Route path='/*' element={ <Navigate to='/journal-app/' />  } />
 
         {/* Login y Registro */}
         {/* <Route path="/auth/*" element={ <AuthRoutes /> } /> */}
